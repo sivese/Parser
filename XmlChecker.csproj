@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="data\case1.xml">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>case1.cs</LastGenOutput>
+    </None>
+    <None Update="data\case2.xml">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>case2.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>
